@@ -11,8 +11,10 @@ app.set("views", "views");
 app.use(bodyParser.urlencoded({ extended: false }));
 
 router.get("/", (req, res, next) => {
-    
-    res.status(200).render("login");
+    var payload = {
+        pageTitle: "Login on Twitter / Twitter",
+    }
+    res.status(200).render("login",payload);
 })
 
 router.post("/", async (req, res, next) => {

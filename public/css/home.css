@@ -1,0 +1,129 @@
+html{
+    font-size:62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+}
+body{
+    background-color:#fff;
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height:1.5rem;
+    margin:0px;
+}
+section.site-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr min-content;
+}
+.left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color:#1DA1F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-content div{
+    display: flex;
+    align-items: center;
+    margin:4rem;
+    color:#fff;
+}
+.left-content div i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 2rem;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.right {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    position: relative;
+}
+.middle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction:column;
+}
+i.fa.fa-dove.site-logo {
+    font-size: 5rem;
+    color: #1DA1F2;
+}
+.middle-content h2 {
+    margin: 0px;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+}
+.middle-content h4 {
+    margin: 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5rem;
+    transition:all 0.3s;
+}
+.signup{
+    background-color: #1DA1F2;
+    color: #fff;
+    border:.1rem solid rgba(0, 0, 0, 0);
+}
+.signup:hover{
+    background-color:rgb(26,145, 218);
+    cursor: pointer;
+}
+.login{
+    color: rgba(29,161,242,1.00);
+    border:.1rem solid rgba(29,161,242,1.00);
+    background-color:#fff;
+}
+.login:hover{
+    background-color: rgba(26, 161, 242, 0.1);
+}
+footer.site-footer {
+    grid-column: 1 /-1;
+    grid-row: 2/-1;
+    border-top: 0.1rem solid #ddd;
+}
+footer ul {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer ul li {
+    padding: 1rem;
+}
+footer ul li a {
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.55rem;
+    color: rgb(91, 112, 131);
+}
+footer.site-footer a:hover{
+    text-decoration: underline;
+}
